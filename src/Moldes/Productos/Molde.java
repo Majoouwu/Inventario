@@ -25,11 +25,17 @@ public class Molde {
         this.peso = peso;
     }
 
+
+
     /**
      * Geters
      * ***********************************************************************
       * @return
      */
+    public UUID getId() {
+        return id;
+    }
+
     public String getMaterial() {
         return material;
     }
@@ -49,8 +55,13 @@ public class Molde {
     /**
      * Setters
      * ***********************************************************************
-     * @param material
+     * @param id
      */
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
     public void setMaterial(String material) {
         this.material = material;
     }
