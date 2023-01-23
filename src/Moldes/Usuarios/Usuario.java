@@ -2,7 +2,7 @@ package src.Moldes.Usuarios;
 
 import java.io.Serializable;
 import java.util.UUID;
-public class Usuario {
+public class Usuario implements Serializable {
     private String password;
     private String telefono;
     private String usuario;
