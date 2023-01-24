@@ -21,24 +21,34 @@ public class VentanaAdmin{
     private void crearVentana(){
         ventana.setSize(1280,720);
         ventana.setVisible(true);
+        ventana.setResizable(false);
 
         contentPane.setSize(1280,720);
+        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
 
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void ponerEtiquetas(){
-        JLabel label = new JLabel("Inventario: Majo Y Rodrigo S.A. de C.V.");
-        contentPane.add(label);
-        label.setBounds(0,0,50,20);
-        label.setFont(new Font("Sans", Font.PLAIN, 35));
+        JLabel etiqueta = new JLabel();
+        contentPane.add(etiqueta);
+        etiqueta.setText("Inventario: Majo Y Rodrigo S.A. de C.V.");
+        etiqueta.setLocation(20,100);
+        etiqueta.setFont(new Font("Sans", Font.PLAIN,35));
+
 
     }
 
     private void ponerBotones(){
         JButton boton = new JButton();
         contentPane.add(boton);
-        boton.setBounds(300,250,100,30);
+        boton.setBounds(20,50,100,30);
+        JButton boton2 = new JButton();
+        contentPane.add(boton2);
+        boton2.setBounds(0,150,100,30);
+        JButton boton3 = new JButton();
+        contentPane.add(boton3);
+        boton3.setBounds(0,250,100,30);
     }
 
 }

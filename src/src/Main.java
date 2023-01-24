@@ -1,5 +1,5 @@
 package src.src;
-import src.gui.VentanaAdmin;
+import src.gui.Vistas.VentanaAdmin;
 import src.gui.Vistas.Login;
 
 public class Main {
