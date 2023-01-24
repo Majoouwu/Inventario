@@ -68,8 +68,7 @@ public class Usuario implements Serializable {
         return (this instanceof Administrador);
     }
     /**
-     * Dado un usuario y password, verifica si coinciden con los almacenados
-     * en this
+     * Dado un usuario y password, verifica si coinciden con los almacenados en this
      *
      * @param usuario  el 'nombre de usuario' a verificar
      * @param password el 'password' a verificar
