@@ -2,7 +2,7 @@ package src.Moldes.Productos;
 
 public class Anillo extends Molde {
 
-    public Anillo(String material, String nombre, float peso, float precio){
+    public Anillo(String material, float precio, String nombre, float peso){
         super(material, nombre, peso, precio);
     }
 }
