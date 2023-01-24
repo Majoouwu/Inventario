@@ -23,4 +23,6 @@ public class principal extends JFrame{
      */
     private JLabel nombreUsuario;
 
+
+
 }
