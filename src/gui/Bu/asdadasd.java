@@ -1,5 +1,5 @@
 package src.gui.Bu;
 
-public class aaaa {
+public class asdadasd {
     
 }
