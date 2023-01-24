@@ -5,9 +5,9 @@ public class Molde {
 
     private UUID id;
     private String material;
-    private String precio;
+    private float precio;
     private String nombre;
-    private String peso;
+    private float peso;
 
 
     /**
@@ -17,7 +17,7 @@ public class Molde {
      * @param nombre
      * @param peso
      */
-    public Molde(String material, String precio, String nombre, String peso){
+    public Molde(String material, float precio, String nombre, float peso){
         this.id = UUID.randomUUID();
         this.material = material;
         this.precio = precio;
@@ -40,7 +40,7 @@ public class Molde {
         return material;
     }
 
-    public String getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
@@ -48,7 +48,7 @@ public class Molde {
         return nombre;
     }
 
-    public String getPeso() {
+    public float getPeso() {
         return peso;
     }
 
@@ -66,7 +66,7 @@ public class Molde {
         this.material = material;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
     }
 
@@ -74,7 +74,7 @@ public class Molde {
         this.nombre = nombre;
     }
 
-    public void setPeso(String peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 }
