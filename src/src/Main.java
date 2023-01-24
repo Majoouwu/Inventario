@@ -7,7 +7,6 @@ public class Main {
         System.out.println("Hello world!");
         VentanaAdmin v = new VentanaAdmin();
         v.mostrar();
-
     }
 
 

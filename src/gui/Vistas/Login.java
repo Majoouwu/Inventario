@@ -43,7 +43,6 @@ public class Login extends JPanel{
 
         // puntito
         puntito = campoPassword.getEchoChar();
-
         panelPassword.add(etiquetaPassword);
         panelPassword.add(Box.createHorizontalStrut(20));
         panelPassword.add(campoPassword);
