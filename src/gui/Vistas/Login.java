@@ -25,4 +25,21 @@ public class Login extends JPanel{
 
     private JButton botonLogin;
 
+    private void crearComponentes() {
+
+        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        // usuario
+        Box panelUsuario = Box.createHorizontalBox();
+        campoUsuario = new JTextField();
+        campoUsuario.setColumns(20);
+        JLabel etiquetaUsuario = new JLabel("Usuario");
+        etiquetaUsuario.setLabelFor(campoUsuario);
+
+        panelUsuario.add(etiquetaUsuario);
+        panelUsuario.add(Box.createHorizontalStrut(20));
+        panelUsuario.add(campoUsuario);
+
+        //contraseña
+        Box panelPassword = Box.createHorizontalBox();
+    }
 }
