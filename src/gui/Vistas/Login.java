@@ -18,6 +18,7 @@ public class Login extends JPanel{
     private JCheckBox mostrarPassword;
 
     private JButton botonLogin;
+    private char puntito;
 
     private void crearComponentes() {
 
@@ -40,5 +41,18 @@ public class Login extends JPanel{
         JLabel etiquetaPassword = new JLabel("Password");
         etiquetaPassword.setLabelFor(campoPassword);
 
+        // puntito
+        puntito = campoPassword.getEchoChar();
+
+        panelPassword.add(etiquetaPassword);
+        panelPassword.add(Box.createHorizontalStrut(20));
+        panelPassword.add(campoPassword);
+
+        //ver contraseña
+        Box panelControl = Box.createHorizontalBox();
+        mostrarPassword = new JCheckBox("Mostrar password");
+        mostrarPassword.addActionListener((e) -> {
+            campoPassword.setEchoChar((!mostrarPassword.isSelected() ? puntito : 0));
+        });
     }
 }
