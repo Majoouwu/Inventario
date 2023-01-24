@@ -8,7 +8,7 @@ public class Molde {
     private float precio;
     private String nombre;
     private float peso;
-
+    private String pieza;
 
     /**
      * Constructor de la clase
@@ -17,12 +17,13 @@ public class Molde {
      * @param nombre
      * @param peso
      */
-    public Molde(String material, float precio, String nombre, float peso){
+    public Molde(String material, float precio, String nombre, float peso, String pieza){
         this.id = UUID.randomUUID();
         this.material = material;
         this.precio = precio;
         this.nombre = nombre;
         this.peso = peso;
+        this.pieza = pieza;
     }
 
 
@@ -52,6 +53,8 @@ public class Molde {
         return peso;
     }
 
+    public String getPieza() { return pieza; }
+
     /**
      * Setters
      * ***********************************************************************
@@ -77,4 +80,6 @@ public class Molde {
     public void setPeso(float peso) {
         this.peso = peso;
     }
+
+    public void setPieza(String pieza) { this.pieza = pieza; }
 }
