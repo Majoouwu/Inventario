@@ -1,11 +1,11 @@
 package src.src;
-import src.gui.principal;
+import src.gui.VentanaAdmin;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
 
-    principal ventana = new principal();
+    VentanaAdmin ventana = new VentanaAdmin();
     ventana.mostrar();
 }
