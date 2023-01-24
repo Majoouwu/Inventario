@@ -35,5 +35,10 @@ public class Login extends JPanel{
 
         //contraseña
         Box panelPassword = Box.createHorizontalBox();
+        campoPassword = new JPasswordField();
+        campoPassword.setColumns(20);
+        JLabel etiquetaPassword = new JLabel("Password");
+        etiquetaPassword.setLabelFor(campoPassword);
+
     }
 }
