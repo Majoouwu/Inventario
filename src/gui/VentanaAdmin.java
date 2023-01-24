@@ -2,23 +2,17 @@ package src.gui;
 
 import javax.swing.*;
 
-public class VentanaAdmin {
-    /**
-     * para mostrar/ocultar las ventanas en la intefaz gráfica
-     */
-    private JTabbedPane panel;
+public class VentanaAdmin{
 
-    /**
-     * muestra el nombre del usuario que utiliza la aplicación
-     */
-    private JLabel nombreUsuario;
-
+    JFrame ventana = new JFrame();
     public VentanaAdmin(){
 
     }
 
     public void mostrar(){
-        panel = new JTabbedPane();
+        ventana.setSize(400,500);
+        ventana.setVisible(true);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }
