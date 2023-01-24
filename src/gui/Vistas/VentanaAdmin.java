@@ -23,7 +23,7 @@ private void crearVentana(){
         ventana.setResizable(false);
 
         contentPane.setSize(1280,720);
-        contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
+        contentPane.setLayout(null);
 
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         }
@@ -32,7 +32,7 @@ private void ponerEtiquetas(){
         JLabel etiqueta = new JLabel();
         contentPane.add(etiqueta);
         etiqueta.setText("Inventario: Majo Y Rodrigo S.A. de C.V.");
-        etiqueta.setLocation(20,100);
+        etiqueta.setBounds(50, 50, 150, 20);
         etiqueta.setFont(new Font("Sans", Font.PLAIN,35));
 
 
